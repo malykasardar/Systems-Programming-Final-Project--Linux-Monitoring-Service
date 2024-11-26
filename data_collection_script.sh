@@ -5,12 +5,12 @@ mkdir -p monitoring_logs
 
 # Collect CPU usage
 echo "=== CPU Usage ===" > monitoring_logs/cpu_usage.log
-# Extracting CPU usage percentage (Mac-specific command)
-top -l 1 | grep "CPU usage" | awk '{print $3 " " $4 " " $5 " " $6 " " $7 " " $8}' >> monitoring_logs/cpu_usage.log
+# Using top to get CPU usage in a better way
+top -bn1 | grep "Cpu(s)" | sed "s/.*, *\([0-9.]*\)%* id.*/\1/" | awk '{usage=100 - $1; print "CPU Usage: " usage "%"}' >> monitoring_logs/cpu_usage.log
 
 # Collect memory usage
 echo "=== Memory Usage ===" > monitoring_logs/memory_usage.log
-# Extracting total and used memory (Mac-specific command)
+# Extracting total and used memory (Linux command)
 free -h | awk 'NR==2{print "Total: " $2 ", Used: " $3}' >> monitoring_logs/memory_usage.log
 
 # Collect disk usage
@@ -31,4 +31,3 @@ echo "=== Open Files ===" > monitoring_logs/open_files.log
 lsof | wc -l >> monitoring_logs/open_files.log  # Count of open files
 
 echo "Data collection completed."
-
