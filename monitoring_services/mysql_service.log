@@ -1,0 +1,9 @@
+Monitoring MySQL Service...
+Wed Nov 27 16:07:08 UTC 2024: MySQL is running.
+Active MySQL Processes:
+mysql     4339  0.0  0.0   2800  1940 ?        S    15:58   0:00 /bin/sh /usr/bin/mysqld_safe
+mysql     4486  2.1 10.3 2442548 413892 ?      Sl   15:58   0:11 /usr/sbin/mysqld --basedir=/usr --datadir=/var/lib/mysql --plugin-dir=/usr/lib/mysql/plugin --log-error=/var/log/mysql/error.log --pid-file=a70459d77395.pid
+MySQL Resource Usage:
+ 4339 mysql     20   0    2800   1940   1812 S   0.0   0.0   0:00.02 mysqld_sa+
+ 4486 mysql     20   0 2442548 413892  36888 S   0.0  10.3   0:11.00 mysqld
+Log updated at Wed Nov 27 16:07:08 UTC 2024
