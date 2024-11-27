@@ -1,6 +1,7 @@
 #!/bin/bash
-
-LOG_DIR="/workspace/monitoring_logs"
+cd ..
+cd ..
+LOG_DIR="monitor_logs/service_logs"
 LOG_FILE="$LOG_DIR/mysql_service.log"
 
 # Ensure log directory exists
