@@ -1,3 +1,6 @@
+# To run this file run the following command in your terminal --> this file is for creating linux env (or terminal) on your machine
+    # python set_workspace.py
+
 import os
 import platform
 import subprocess
