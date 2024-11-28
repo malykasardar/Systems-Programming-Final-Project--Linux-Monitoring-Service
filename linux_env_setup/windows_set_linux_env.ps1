@@ -9,8 +9,8 @@ docker run -it -v ${PWD}:/workspace ubuntu bash -c "
     # Update package lists
     apt-get update && \
 
-    # Install sudo, iproute2, lsof, and dos2unix
-    apt-get install -y sudo iproute2 lsof dos2unix && \
+    # Install sudo, iproute2, lsof, dos2unix, and dialog
+    apt-get install -y sudo iproute2 lsof dos2unix dialog && \
 
     # Convert windows_set_linux_env.ps1 to Unix format
     dos2unix windows_set_linux_env.ps1 && \
