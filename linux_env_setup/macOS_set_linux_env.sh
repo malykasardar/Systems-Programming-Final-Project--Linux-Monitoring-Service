@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Run an Ubuntu Docker container interactively, mount the parent directory as /workspace
-docker run -it -v $(pwd)/..:/workspace ubuntu bash -c "
+docker run -it -v $(pwd)/.:/workspace ubuntu bash -c "
     # Update package lists
     apt-get update && \
 
