@@ -4,8 +4,8 @@
   # cd linux_env_setup
   # .\windows_set_linux_env.ps1
 
-# Run an Ubuntu Docker container interactively, mount the current directory as /workspace
-docker run -it -v ${PWD}:/workspace ubuntu bash -c "
+# Run an Ubuntu Docker container interactively, mount the parent directory as /workspace
+docker run -it -v ${PWD}/..:/workspace ubuntu bash -c "
     # Update package lists
     apt-get update && \
 
