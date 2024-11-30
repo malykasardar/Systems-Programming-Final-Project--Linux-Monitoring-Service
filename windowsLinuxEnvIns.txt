@@ -1,0 +1,69 @@
+TO LAUNCH THE PROJECT AGAIN FOLLOW THESE STEPS:
+
+1. Open powershell as admin
+
+2. run the following command:
+  wsl
+
+3. run the following command in Ubuntu
+  ls
+
+4. cd to the project
+
+5. run the following command:
+  explorer.exe .
+
+6. copy the folder path
+
+7. Open vs code
+
+8. open folder and paste the folder path
+
+DONE
+
+
+
+------------------------------------------------------------------------
+
+SETUP
+
+**Open docker first and delete all containers**
+
+1. Check if virtualization is enabled by opening task manager and looking at cpu info
+  - if it is disabled, open the BIOS to enable it
+
+2. Search for "Windows Features" and make sure windows subsystem for Linux is checked
+
+3. Install WSL
+  wsl --install -d Ubuntu
+
+4. Allow paste commands in Ubuntu window
+
+5. Make a working directory inside Ubuntu
+
+6. cd whatever the directory name is
+
+7. In docker, open settings --> Resources --> WSL INTEGRATION
+  Enable Ubuntu and apply & restart
+
+8. setup git in Ubuntu with the following commands:
+  git config --global user.name "Your Name"
+  git config --global user.email "youremail@example.com"
+
+9. Check if git is setup correctly
+
+10. generate github token and copy it immediately
+
+11. Clone the repository and paste the github token for the password prompt
+
+12. cd to the project
+
+13. run the command below:
+  explorer.exe .
+
+14. copy the project path from explorer
+
+15. open vs code and paste the path to open the folder
+
+DONE!
+
