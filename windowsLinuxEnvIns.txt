@@ -1,14 +1,11 @@
 TO LAUNCH THE PROJECT AGAIN FOLLOW THESE STEPS:
 
-1. Open powershell as admin
+1. Open Ubuntu
 
-2. run the following command:
-  wsl
-
-3. run the following command in Ubuntu
+2. run the following command in Ubuntu
   ls
 
-4. cd to the project
+3. cd to the project
 
 5. run the following command:
   explorer.exe .
@@ -62,7 +59,7 @@ SETUP
   explorer.exe .
 
 14. copy the project path from explorer
-
+ 
 15. open vs code and paste the path to open the folder
 
 DONE!
