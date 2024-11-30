@@ -13,7 +13,7 @@ if [ ! -f "$DISCORD_DIR/$LOG_FILE" ]; then
 fi
 
 # Store logs in a temporary file
-OUTPUT_FILE="$HOME/Software-Programming-final-project/monitoring_services/monitor_applications/discord_logs_output.log"
+OUTPUT_FILE="$HOME/Software-Programming-final-project/monitor_logs/discord_logs_output.log"
 
 echo "Monitoring Discord logs at: $DISCORD_DIR/$LOG_FILE"
 echo "Writing log output to: $OUTPUT_FILE"
