@@ -5,16 +5,10 @@ TO LAUNCH THE PROJECT AGAIN FOLLOW THESE STEPS:
 2. run the following command in Ubuntu
   ls
 
-3. cd to the project
+3. cd to the project (the repo, so you have to cd twice)
 
 5. run the following command:
-  explorer.exe .
-
-6. copy the folder path
-
-7. Open vs code on windows machine
-
-8. open folder and paste the folder path
+  code .
 
 DONE
 
