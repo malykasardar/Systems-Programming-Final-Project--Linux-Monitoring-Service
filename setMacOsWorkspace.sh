@@ -1,5 +1,22 @@
 #!/bin/bash
 
+# Function to check if Docker is running
+is_docker_running() {
+    docker info > /dev/null 2>&1
+    return $?
+}
+
+# Start Docker if it is not running
+if ! is_docker_running; then
+    echo "Docker is not running. Starting Docker Desktop..."
+    open -a Docker
+    echo "Waiting for Docker to start..."
+    while ! is_docker_running; do
+        sleep 1
+    done
+    echo "Docker is now running."
+fi
+
 # Define the container name
 CONTAINER_NAME="my_ubuntu_container"
 
