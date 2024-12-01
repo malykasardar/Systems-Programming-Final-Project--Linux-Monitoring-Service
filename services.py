@@ -124,5 +124,3 @@ def track_all():
     applications_status = track_applications()
 
     return f"{services_status}\n{resources_status}\n{applications_status}"
-
-call_mysql()
