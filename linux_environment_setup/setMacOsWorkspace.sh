@@ -3,6 +3,7 @@
 # Define variables
 IMAGE_NAME="my_ubuntu_image"
 CONTAINER_NAME="my_ubuntu_container"
+PARENT_DIR=$(dirname $(pwd)) # Get the parent directory
 
 # Check if Docker is running
 is_docker_running() {
@@ -38,9 +39,9 @@ fi
 
 # Run the container
 echo "Running the Docker container: ${CONTAINER_NAME}..."
-docker run --name ${CONTAINER_NAME} -it -v $(pwd):/workspace ${IMAGE_NAME}
+docker run --name ${CONTAINER_NAME} -it -v ${PARENT_DIR}:/workspace ${IMAGE_NAME}
 if [ $? -ne 0 ]; then
     echo "Failed to start the Docker container."
     exit 1
 fi
-echo "Docker container is running."
+echo "Docker container is running with parent directory mounted as /workspace."
