@@ -3,7 +3,7 @@
 # Output file for firewall logs
 OUTPUT_FILE="$HOME/Software-Programming-final-project/monitor_logs/firewall_logs_output.log"
 
-# Inform the user about the monitoring process
+# Notification of the monitoring process
 echo "Monitoring iptables logs and logging to: $OUTPUT_FILE"
 
 # Monitor iptables rules and append changes to the output file

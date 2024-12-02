@@ -3,7 +3,7 @@
 # Output file for network monitoring logs
 OUTPUT_FILE="$HOME/Software-Programming-final-project/monitor_logs/network_logs_output.log"
 
-# Inform the user about the monitoring process
+# Notification of the monitoring process
 echo "Monitoring network logs with net-tools and logging to: $OUTPUT_FILE"
 
 # Monitor active network connections and append to the output file
