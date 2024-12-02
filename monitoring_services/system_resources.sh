@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# Create a logs directory if it doesn't exist
-cd ..
-mkdir -p monitor_logs
-
 # Define the log file
 LOG_FILE="monitor_logs/resource_monitoring.log"
 
@@ -47,5 +43,3 @@ echo -e "" >> "$LOG_FILE"
 # Collect open files
 echo -e "=== Open Files ===" >> "$LOG_FILE"
 lsof | wc -l | awk '{print "Open Files Count: " $1}' >> "$LOG_FILE"
-
-echo "Data collection completed."

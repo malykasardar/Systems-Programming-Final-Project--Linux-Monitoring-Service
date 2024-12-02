@@ -1,12 +1,14 @@
 #!/bin/bash
-cd ..
-cd ..
-LOG_DIR="monitor_logs/service_logs"
+
+# Get the absolute path of the script directory
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+LOG_DIR="$SCRIPT_DIR/../../monitor_logs/service_logs"
 LOG_FILE="$LOG_DIR/apache_service.log"
 
-# Ensure log directory exists
+# Create the log directory if it doesn't exist
 mkdir -p "$LOG_DIR"
 
+# Write log information to the log file
 echo "Monitoring Apache Service..." > "$LOG_FILE"
 
 # Check if Apache is running
@@ -16,12 +18,9 @@ else
     echo "$(date): Apache is NOT running." >> "$LOG_FILE"
 fi
 
-# List active Apache processes
-echo "Active Apache Processes:" >> "$LOG_FILE"
-ps aux | grep '[a]pache2' >> "$LOG_FILE"
-
-# Track resource usage
-echo "Apache Resource Usage:" >> "$LOG_FILE"
-top -b -n 1 | grep apache2 >> "$LOG_FILE"
-
 echo "Log updated at $(date)" >> "$LOG_FILE"
+
+# Flush everything to disk
+sync
+
+echo "apache done"
