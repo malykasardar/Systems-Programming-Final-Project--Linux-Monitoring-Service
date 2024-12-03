@@ -8,18 +8,20 @@ SLACK_WEBHOOK_URL = "https://hooks.slack.com/services/T083D47TD0A/B082YJUKWBH/cy
 
 # Function to call the system resources script and read log output
 def call_system_resources():
-    log_dir = "monitor_logs"
+    log_dir = os.path.join(os.path.dirname(__file__), '..', 'monitor_logs')  # Update path to the monitor_logs folder
     
     # Ensure the logs directory exists
     if not os.path.exists(log_dir):
         os.makedirs(log_dir)
     
-    # Run the shell script from the new location
-    subprocess.run(['bash', 'backend/system_resources.sh'])
+    # Run the shell script from the correct location
+    script_path = os.path.join(os.path.dirname(__file__), '..', 'backend', 'system_resources.sh')  # Correct path to system_resources.sh
+    subprocess.run(['bash', script_path])
     time.sleep(0.2)  # Wait for the script to finish and the log file to be updated
     
     # Read the log file after the shell script has run
-    with open('monitor_logs/resource_monitoring.log', 'r') as log_file:
+    log_path = os.path.join(log_dir, 'resource_monitoring.log')
+    with open(log_path, 'r') as log_file:
         return log_file.read()
 
 def track_cpu():
