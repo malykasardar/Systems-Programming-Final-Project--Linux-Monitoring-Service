@@ -19,6 +19,8 @@
 
   **Activate Python environment**
    ```bash
+   apt install python3-venv -y
+   python3 -m venv venv
    source /workspace/venv/bin/activate
    ```
 
