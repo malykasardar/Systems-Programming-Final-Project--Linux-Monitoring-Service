@@ -10,9 +10,6 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'frontend'))  # For f
 utilities_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'utilities'))
 sys.path.insert(0, utilities_path)  # For utilities/cpu_stress.py and memory_stress.py
 
-# Print sys.path to verify paths are correctly added
-print("Current sys.path:", sys.path)
-
 import services  # This will now import from frontend/services.py
 import cpu_stress  # Import the CPU stress module from utilities
 import memory_stress  # Import the Memory stress module from utilities
