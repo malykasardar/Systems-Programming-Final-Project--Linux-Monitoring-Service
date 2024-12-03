@@ -18,13 +18,11 @@ free -h | awk 'NR==2{print "Total: " $2 ", Used: " $3}' >> "$LOG_FILE"
 
 echo -e "" >> "$LOG_FILE"
 
-
 # Collect disk usage
 echo "=== Disk Usage ===" >> "$LOG_FILE"
 df -h | awk '$NF=="/"{printf "Total: %s, Used: %s\n", $2, $3}' >> "$LOG_FILE"
 
 echo -e "" >> "$LOG_FILE"
-
 
 # Collect network interface info
 echo "=== Network Interfaces ===" >> "$LOG_FILE"
@@ -32,13 +30,11 @@ ip addr show | grep 'state' >> "$LOG_FILE"
 
 echo -e "" >> "$LOG_FILE"
 
-
 # Collect process information
 echo "=== Running Processes ===" >> "$LOG_FILE"
 ps aux --sort=-%mem | head -n 10 >> "$LOG_FILE"  # Top 10 memory-consuming processes
 
 echo -e "" >> "$LOG_FILE"
-
 
 # Collect open files
 echo -e "=== Open Files ===" >> "$LOG_FILE"

@@ -12,6 +12,8 @@ TO LAUNCH THE PROJECT AGAIN FOLLOW THESE STEPS:
 
 DONE
 
+source /workspace/venv/bin/activate
+pip install requests
 
 
 ------------------------------------------------------------------------
