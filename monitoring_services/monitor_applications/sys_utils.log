@@ -1,0 +1,181 @@
+Starting monitoring script...
+Starting monitoring script...
+Checking system processes related to bash, sysvinit-utils, lsof, and procps...
+root         258  0.0  0.0   4784  3324 ?        Ss   17:59   0:00 /bin/bash /snap/ubuntu-desktop-installer/1286/bin/subiquity-server
+abdulla+     438  0.0  0.0   6216  5120 pts/0    Ss+  17:59   0:00 -bash
+abdulla+     481  0.0  0.0   6124  4888 pts/1    S+   17:59   0:00 -bash
+abdulla+    1016  0.0  0.0   4916   468 ?        S    18:00   0:00 /bin/bash ./monitor_logs.sh
+abdulla+   35655  0.0  0.0   4916   468 ?        S    19:23   0:00 /bin/bash ./monitor_logs.sh
+abdulla+   38896  0.0  0.0   4916   464 ?        S    19:29   0:00 /bin/bash ./monitor_logs.sh
+abdulla+   41597  0.0  0.0   4916   464 ?        S    19:34   0:00 /bin/bash ./Sys_utils.sh
+abdulla+   42057  0.0  0.0   4916   464 ?        S    19:35   0:00 /bin/bash ./Sys_utils.sh
+abdulla+   42793  0.0  0.0   4916   464 ?        S    19:36   0:00 /bin/bash ./Sys_utils.sh
+abdulla+   58624  0.0  0.0   6244  5252 pts/7    Ss   20:08   0:00 /bin/bash --init-file /home/abdullah1/.vscode-server/bin/f1a4fb101478ce6ec82fe9627c43efbf9e98c813/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+abdulla+   65109  0.0  0.0   6244  5304 pts/8    Ss   20:20   0:00 /bin/bash --init-file /home/abdullah1/.vscode-server/bin/f1a4fb101478ce6ec82fe9627c43efbf9e98c813/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+abdulla+   67488  0.0  0.0   4784  3436 pts/3    S+   20:24   0:00 /bin/bash /home/abdullah1/.vscode-server/bin/f1a4fb101478ce6ec82fe9627c43efbf9e98c813/out/vs/base/node/cpuUsage.sh 65109
+Monitoring /var/log/syslog for patterns: bash:|error|init:|lsof:|procps:
+Tracking open files using lsof...
+bash        438                       abdullah1  cwd       DIR               8,32     4096             39609 /home/abdullah1/CorrectSysProject/Software-Programming-final-project
+bash        438                       abdullah1  rtd       DIR               8,32     4096                 2 /
+bash        438                       abdullah1  txt       REG               8,32  1396520              8756 /usr/bin/bash
+bash        438                       abdullah1  mem       REG               8,32   353616             10517 /usr/lib/locale/C.utf8/LC_CTYPE
+bash        438                       abdullah1  mem       REG               8,32       50             10523 /usr/lib/locale/C.utf8/LC_NUMERIC
+bash        438                       abdullah1  mem       REG               8,32     3360             10526 /usr/lib/locale/C.utf8/LC_TIME
+bash        438                       abdullah1  mem       REG               8,32     1406             10516 /usr/lib/locale/C.utf8/LC_COLLATE
+bash        438                       abdullah1  mem       REG               8,32      270             10521 /usr/lib/locale/C.utf8/LC_MONETARY
+bash        438                       abdullah1  mem       REG               8,32       48             10520 /usr/lib/locale/C.utf8/LC_MESSAGES/SYS_LC_MESSAGES
+bash        438                       abdullah1  mem       REG               8,32    27002             30104 /usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+bash        438                       abdullah1  mem       REG               8,32  2220400             29838 /usr/lib/x86_64-linux-gnu/libc.so.6
+bash        438                       abdullah1  mem       REG               8,32   200136              6958 /usr/lib/x86_64-linux-gnu/libtinfo.so.6.3
+bash        438                       abdullah1  mem       REG               8,32       34             10524 /usr/lib/locale/C.utf8/LC_PAPER
+bash        438                       abdullah1  mem       REG               8,32       62             10522 /usr/lib/locale/C.utf8/LC_NAME
+bash        438                       abdullah1  mem       REG               8,32      127             10515 /usr/lib/locale/C.utf8/LC_ADDRESS
+bash        438                       abdullah1  mem       REG               8,32       47             10525 /usr/lib/locale/C.utf8/LC_TELEPHONE
+bash        438                       abdullah1  mem       REG               8,32       23             10519 /usr/lib/locale/C.utf8/LC_MEASUREMENT
+bash        438                       abdullah1  mem       REG               8,32   240936             29835 /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+bash        438                       abdullah1  mem       REG               8,32      258             10518 /usr/lib/locale/C.utf8/LC_IDENTIFICATION
+bash        438                       abdullah1    0u      CHR              136,0      0t0                 3 /dev/pts/0
+bash        438                       abdullah1    1u      CHR              136,0      0t0                 3 /dev/pts/0
+bash        438                       abdullah1    2u      CHR              136,0      0t0                 3 /dev/pts/0
+bash        438                       abdullah1  255u      CHR              136,0      0t0                 3 /dev/pts/0
+bash        481                       abdullah1  cwd       DIR               8,32     4096               477 /home/abdullah1
+bash        481                       abdullah1  rtd       DIR               8,32     4096                 2 /
+bash        481                       abdullah1  txt       REG               8,32  1396520              8756 /usr/bin/bash
+bash        481                       abdullah1  mem       REG               8,32   353616             10517 /usr/lib/locale/C.utf8/LC_CTYPE
+bash        481                       abdullah1  mem       REG               8,32       50             10523 /usr/lib/locale/C.utf8/LC_NUMERIC
+bash        481                       abdullah1  mem       REG               8,32     3360             10526 /usr/lib/locale/C.utf8/LC_TIME
+bash        481                       abdullah1  mem       REG               8,32     1406             10516 /usr/lib/locale/C.utf8/LC_COLLATE
+bash        481                       abdullah1  mem       REG               8,32      270             10521 /usr/lib/locale/C.utf8/LC_MONETARY
+bash        481                       abdullah1  mem       REG               8,32       48             10520 /usr/lib/locale/C.utf8/LC_MESSAGES/SYS_LC_MESSAGES
+bash        481                       abdullah1  mem       REG               8,32    27002             30104 /usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+bash        481                       abdullah1  mem       REG               8,32  2220400             29838 /usr/lib/x86_64-linux-gnu/libc.so.6
+bash        481                       abdullah1  mem       REG               8,32   200136              6958 /usr/lib/x86_64-linux-gnu/libtinfo.so.6.3
+bash        481                       abdullah1  mem       REG               8,32       34             10524 /usr/lib/locale/C.utf8/LC_PAPER
+bash        481                       abdullah1  mem       REG               8,32       62             10522 /usr/lib/locale/C.utf8/LC_NAME
+bash        481                       abdullah1  mem       REG               8,32      127             10515 /usr/lib/locale/C.utf8/LC_ADDRESS
+bash        481                       abdullah1  mem       REG               8,32       47             10525 /usr/lib/locale/C.utf8/LC_TELEPHONE
+bash        481                       abdullah1  mem       REG               8,32       23             10519 /usr/lib/locale/C.utf8/LC_MEASUREMENT
+bash        481                       abdullah1  mem       REG               8,32   240936             29835 /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+bash        481                       abdullah1  mem       REG               8,32      258             10518 /usr/lib/locale/C.utf8/LC_IDENTIFICATION
+bash        481                       abdullah1    0u      CHR              136,1      0t0                 4 /dev/pts/1
+bash        481                       abdullah1    1u      CHR              136,1      0t0                 4 /dev/pts/1
+bash        481                       abdullah1    2u      CHR              136,1      0t0                 4 /dev/pts/1
+bash        481                       abdullah1  255u      CHR              136,1      0t0                 4 /dev/pts/1
+monitor_l  1016                       abdullah1  txt       REG               8,32  1396520              8756 /usr/bin/bash
+monitor_l 35655                       abdullah1  txt       REG               8,32  1396520              8756 /usr/bin/bash
+monitor_l 38896                       abdullah1  txt       REG               8,32  1396520              8756 /usr/bin/bash
+Sys_utils 41597                       abdullah1  txt       REG               8,32  1396520              8756 /usr/bin/bash
+Sys_utils 42057                       abdullah1  txt       REG               8,32  1396520              8756 /usr/bin/bash
+Sys_utils 42793                       abdullah1  txt       REG               8,32  1396520              8756 /usr/bin/bash
+sys_utils 43933                       abdullah1  txt       REG               8,32  1396520              8756 /usr/bin/bash
+sys_utils 48629                       abdullah1  txt       REG               8,32  1396520              8756 /usr/bin/bash
+bash      58624                       abdullah1  cwd       DIR               8,32     4096              4621 /home/abdullah1/CorrectSysProject/Software-Programming-final-project/monitoring_services/monitor_applications
+bash      58624                       abdullah1  rtd       DIR               8,32     4096                 2 /
+bash      58624                       abdullah1  txt       REG               8,32  1396520              8756 /usr/bin/bash
+bash      58624                       abdullah1  mem       REG               8,32   353616             10517 /usr/lib/locale/C.utf8/LC_CTYPE
+bash      58624                       abdullah1  mem       REG               8,32       50             10523 /usr/lib/locale/C.utf8/LC_NUMERIC
+bash      58624                       abdullah1  mem       REG               8,32     3360             10526 /usr/lib/locale/C.utf8/LC_TIME
+bash      58624                       abdullah1  mem       REG               8,32     1406             10516 /usr/lib/locale/C.utf8/LC_COLLATE
+bash      58624                       abdullah1  mem       REG               8,32      270             10521 /usr/lib/locale/C.utf8/LC_MONETARY
+bash      58624                       abdullah1  mem       REG               8,32       48             10520 /usr/lib/locale/C.utf8/LC_MESSAGES/SYS_LC_MESSAGES
+bash      58624                       abdullah1  mem       REG               8,32    27002             30104 /usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+bash      58624                       abdullah1  mem       REG               8,32  2220400             29838 /usr/lib/x86_64-linux-gnu/libc.so.6
+bash      58624                       abdullah1  mem       REG               8,32   200136              6958 /usr/lib/x86_64-linux-gnu/libtinfo.so.6.3
+bash      58624                       abdullah1  mem       REG               8,32       34             10524 /usr/lib/locale/C.utf8/LC_PAPER
+bash      58624                       abdullah1  mem       REG               8,32       62             10522 /usr/lib/locale/C.utf8/LC_NAME
+bash      58624                       abdullah1  mem       REG               8,32      127             10515 /usr/lib/locale/C.utf8/LC_ADDRESS
+bash      58624                       abdullah1  mem       REG               8,32       47             10525 /usr/lib/locale/C.utf8/LC_TELEPHONE
+bash      58624                       abdullah1  mem       REG               8,32       23             10519 /usr/lib/locale/C.utf8/LC_MEASUREMENT
+bash      58624                       abdullah1  mem       REG               8,32   240936             29835 /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+bash      58624                       abdullah1  mem       REG               8,32      258             10518 /usr/lib/locale/C.utf8/LC_IDENTIFICATION
+bash      58624                       abdullah1    0u      CHR              136,7      0t0                10 /dev/pts/7
+bash      58624                       abdullah1    1u      CHR              136,7      0t0                10 /dev/pts/7
+bash      58624                       abdullah1    2u      CHR              136,7      0t0                10 /dev/pts/7
+bash      58624                       abdullah1   19w      REG               8,32        0             39879 /home/abdullah1/.vscode-server/data/logs/20241202T200811/ptyhost.log
+bash      58624                       abdullah1   20w      REG               8,32      425             39870 /home/abdullah1/.vscode-server/data/logs/20241202T200811/remoteagent.log
+bash      58624                       abdullah1  255u      CHR              136,7      0t0                10 /dev/pts/7
+sys_utils 60851                       abdullah1  txt       REG               8,32  1396520              8756 /usr/bin/bash
+sys_utils 64664                       abdullah1  txt       REG               8,32  1396520              8756 /usr/bin/bash
+sys_utils 64673                       abdullah1  txt       REG               8,32  1396520              8756 /usr/bin/bash
+bash      65109                       abdullah1  cwd       DIR               8,32     4096              4621 /home/abdullah1/CorrectSysProject/Software-Programming-final-project/monitoring_services/monitor_applications
+bash      65109                       abdullah1  rtd       DIR               8,32     4096                 2 /
+bash      65109                       abdullah1  txt       REG               8,32  1396520              8756 /usr/bin/bash
+bash      65109                       abdullah1  mem       REG               8,32   353616             10517 /usr/lib/locale/C.utf8/LC_CTYPE
+bash      65109                       abdullah1  mem       REG               8,32       50             10523 /usr/lib/locale/C.utf8/LC_NUMERIC
+bash      65109                       abdullah1  mem       REG               8,32     3360             10526 /usr/lib/locale/C.utf8/LC_TIME
+bash      65109                       abdullah1  mem       REG               8,32     1406             10516 /usr/lib/locale/C.utf8/LC_COLLATE
+bash      65109                       abdullah1  mem       REG               8,32      270             10521 /usr/lib/locale/C.utf8/LC_MONETARY
+bash      65109                       abdullah1  mem       REG               8,32       48             10520 /usr/lib/locale/C.utf8/LC_MESSAGES/SYS_LC_MESSAGES
+bash      65109                       abdullah1  mem       REG               8,32    27002             30104 /usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+bash      65109                       abdullah1  mem       REG               8,32  2220400             29838 /usr/lib/x86_64-linux-gnu/libc.so.6
+bash      65109                       abdullah1  mem       REG               8,32   200136              6958 /usr/lib/x86_64-linux-gnu/libtinfo.so.6.3
+bash      65109                       abdullah1  mem       REG               8,32       34             10524 /usr/lib/locale/C.utf8/LC_PAPER
+bash      65109                       abdullah1  mem       REG               8,32       62             10522 /usr/lib/locale/C.utf8/LC_NAME
+bash      65109                       abdullah1  mem       REG               8,32      127             10515 /usr/lib/locale/C.utf8/LC_ADDRESS
+bash      65109                       abdullah1  mem       REG               8,32       47             10525 /usr/lib/locale/C.utf8/LC_TELEPHONE
+bash      65109                       abdullah1  mem       REG               8,32       23             10519 /usr/lib/locale/C.utf8/LC_MEASUREMENT
+bash      65109                       abdullah1  mem       REG               8,32   240936             29835 /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+bash      65109                       abdullah1  mem       REG               8,32      258             10518 /usr/lib/locale/C.utf8/LC_IDENTIFICATION
+bash      65109                       abdullah1    0u      CHR              136,8      0t0                11 /dev/pts/8
+bash      65109                       abdullah1    1u      CHR              136,8      0t0                11 /dev/pts/8
+bash      65109                       abdullah1    2u      CHR              136,8      0t0                11 /dev/pts/8
+bash      65109                       abdullah1   19w      REG               8,32        0             39879 /home/abdullah1/.vscode-server/data/logs/20241202T200811/ptyhost.log
+bash      65109                       abdullah1   20w      REG               8,32      425             39870 /home/abdullah1/.vscode-server/data/logs/20241202T200811/remoteagent.log
+bash      65109                       abdullah1   21u      CHR                5,2      0t0                85 /dev/ptmx
+bash      65109                       abdullah1  255u      CHR              136,8      0t0                11 /dev/pts/8
+cpuUsage. 67488                       abdullah1  txt       REG               8,32  1396520              8756 /usr/bin/bash
+sys_utils 67494                       abdullah1  txt       REG               8,32  1396520              8756 /usr/bin/bash
+sys_utils 67495                       abdullah1  txt       REG               8,32  1396520              8756 /usr/bin/bash
+sys_utils 67506                       abdullah1  txt       REG               8,32  1396520              8756 /usr/bin/bash
+lsof      67507                       abdullah1  cwd       DIR               8,32     4096              4621 /home/abdullah1/CorrectSysProject/Software-Programming-final-project/monitoring_services/monitor_applications
+lsof      67507                       abdullah1  rtd       DIR               8,32     4096                 2 /
+lsof      67507                       abdullah1  txt       REG               8,32   167544              1574 /usr/bin/lsof
+lsof      67507                       abdullah1  mem       REG               8,32    27002             30104 /usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+lsof      67507                       abdullah1  mem       REG               8,32   353616             10517 /usr/lib/locale/C.utf8/LC_CTYPE
+lsof      67507                       abdullah1  mem       REG               8,32    68552             29851 /usr/lib/x86_64-linux-gnu/libresolv.so.2
+lsof      67507                       abdullah1  mem       REG               8,32    22600              6782 /usr/lib/x86_64-linux-gnu/libkeyutils.so.1.9
+lsof      67507                       abdullah1  mem       REG               8,32    52016              2149 /usr/lib/x86_64-linux-gnu/libkrb5support.so.0.1
+lsof      67507                       abdullah1  mem       REG               8,32    18504              6650 /usr/lib/x86_64-linux-gnu/libcom_err.so.2.1
+lsof      67507                       abdullah1  mem       REG               8,32   182864              2030 /usr/lib/x86_64-linux-gnu/libk5crypto.so.3.1
+lsof      67507                       abdullah1  mem       REG               8,32   827936              2159 /usr/lib/x86_64-linux-gnu/libkrb5.so.3.3
+lsof      67507                       abdullah1  mem       REG               8,32   613064              6889 /usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.10.4
+lsof      67507                       abdullah1  mem       REG               8,32   338648              2173 /usr/lib/x86_64-linux-gnu/libgssapi_krb5.so.2.2
+lsof      67507                       abdullah1  mem       REG               8,32  2220400             29838 /usr/lib/x86_64-linux-gnu/libc.so.6
+lsof      67507                       abdullah1  mem       REG               8,32   166280              6928 /usr/lib/x86_64-linux-gnu/libselinux.so.1
+lsof      67507                       abdullah1  mem       REG               8,32   182912              6960 /usr/lib/x86_64-linux-gnu/libtirpc.so.3.0.0
+lsof      67507                       abdullah1  mem       REG               8,32   240936             29835 /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+lsof      67507                       abdullah1    0u      CHR              136,8      0t0                11 /dev/pts/8
+lsof      67507                       abdullah1    1w     FIFO               0,12      0t0           1005778 pipe
+lsof      67507                       abdullah1    2w     FIFO               0,12      0t0           1005768 pipe
+lsof      67507                       abdullah1    3r      DIR               0,62        0                 1 /proc
+lsof      67507                       abdullah1    4r      DIR               0,62        0           1012322 /proc/67507/fd
+lsof      67507                       abdullah1    5w     FIFO               0,12      0t0           1012327 pipe
+lsof      67507                       abdullah1    6r     FIFO               0,12      0t0           1012328 pipe
+lsof      67509                       abdullah1  cwd       DIR               8,32     4096              4621 /home/abdullah1/CorrectSysProject/Software-Programming-final-project/monitoring_services/monitor_applications
+lsof      67509                       abdullah1  rtd       DIR               8,32     4096                 2 /
+lsof      67509                       abdullah1  txt       REG               8,32   167544              1574 /usr/bin/lsof
+lsof      67509                       abdullah1  mem       REG               8,32    27002             30104 /usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+lsof      67509                       abdullah1  mem       REG               8,32   353616             10517 /usr/lib/locale/C.utf8/LC_CTYPE
+lsof      67509                       abdullah1  mem       REG               8,32    68552             29851 /usr/lib/x86_64-linux-gnu/libresolv.so.2
+lsof      67509                       abdullah1  mem       REG               8,32    22600              6782 /usr/lib/x86_64-linux-gnu/libkeyutils.so.1.9
+lsof      67509                       abdullah1  mem       REG               8,32    52016              2149 /usr/lib/x86_64-linux-gnu/libkrb5support.so.0.1
+lsof      67509                       abdullah1  mem       REG               8,32    18504              6650 /usr/lib/x86_64-linux-gnu/libcom_err.so.2.1
+lsof      67509                       abdullah1  mem       REG               8,32   182864              2030 /usr/lib/x86_64-linux-gnu/libk5crypto.so.3.1
+lsof      67509                       abdullah1  mem       REG               8,32   827936              2159 /usr/lib/x86_64-linux-gnu/libkrb5.so.3.3
+lsof      67509                       abdullah1  mem       REG               8,32   613064              6889 /usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.10.4
+lsof      67509                       abdullah1  mem       REG               8,32   338648              2173 /usr/lib/x86_64-linux-gnu/libgssapi_krb5.so.2.2
+lsof      67509                       abdullah1  mem       REG               8,32  2220400             29838 /usr/lib/x86_64-linux-gnu/libc.so.6
+lsof      67509                       abdullah1  mem       REG               8,32   166280              6928 /usr/lib/x86_64-linux-gnu/libselinux.so.1
+lsof      67509                       abdullah1  mem       REG               8,32   182912              6960 /usr/lib/x86_64-linux-gnu/libtirpc.so.3.0.0
+lsof      67509                       abdullah1  mem       REG               8,32   240936             29835 /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+lsof      67509                       abdullah1    4r     FIFO               0,12      0t0           1012327 pipe
+lsof      67509                       abdullah1    7w     FIFO               0,12      0t0           1012328 pipe
+Tracking network connections...
+Netid State  Recv-Q Send-Q  Local Address:Port  Peer Address:PortProcess
+udp   UNCONN 0      0       127.0.0.53%lo:53         0.0.0.0:*          
+udp   UNCONN 0      0      10.255.255.254:53         0.0.0.0:*          
+udp   UNCONN 0      0           127.0.0.1:323        0.0.0.0:*          
+udp   UNCONN 0      0               [::1]:323           [::]:*          
+tcp   LISTEN 0      511         127.0.0.1:36045      0.0.0.0:*          
+tcp   LISTEN 0      1000   10.255.255.254:53         0.0.0.0:*          
+tcp   LISTEN 0      4096    127.0.0.53%lo:53         0.0.0.0:*          

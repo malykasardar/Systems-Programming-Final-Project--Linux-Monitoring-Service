@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LOG_FILE="monitoring_log.txt"
+LOG_FILE="sys_utils.log"
 
 # Redirect all output to the log file
 exec > >(tee -a "$LOG_FILE") 2>&1
