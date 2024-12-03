@@ -16,7 +16,7 @@ def call_system_resources():
     
     # Run the script
     subprocess.run(['bash', script_path])
-    time.sleep(0.2)  # Give it a moment to update the log file
+    time.sleep(0.5)  # Give it a moment to update the log file
     
     # Check if the log file exists. If not, create an empty one (though this shouldn't happen)
     if not os.path.exists(log_path):
@@ -31,6 +31,7 @@ def track_cpu():
     """Retrieve and return the current CPU usage from the system log."""
     resources_output = call_system_resources()
     cpu_usage = re.search(r'CPU Usage: ([\d\.]+)%', resources_output)
+    
     return float(cpu_usage.group(1)) if cpu_usage else 0.0
 
 def track_memory():
