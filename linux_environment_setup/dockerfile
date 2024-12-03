@@ -1,0 +1,16 @@
+# Use the official Ubuntu image as a base
+FROM ubuntu:20.04
+
+# Set non-interactive mode to avoid prompts during build
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Update package lists and install dependencies including iproute2 and lsof
+RUN apt-get update && \
+    apt-get install -y python3 python3-pip python3-venv curl git iproute2 lsof && \
+    apt-get clean
+
+# Set up a working directory inside the container
+WORKDIR /workspace
+
+# Set the default command to bash
+CMD ["/bin/bash"]
