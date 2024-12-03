@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the log file
-LOG_FILE="monitor_logs/resource_monitoring.log"
+LOG_FILE="resource_monitoring.log"
 
 # Clear the log file if it exists
 > "$LOG_FILE"
