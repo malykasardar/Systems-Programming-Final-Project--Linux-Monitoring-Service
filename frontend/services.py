@@ -8,19 +8,20 @@ SLACK_WEBHOOK_URL = "https://hooks.slack.com/services/T083D47TD0A/B082YJUKWBH/cy
 
 # Function to call the system resources script and read log output
 def call_system_resources():
-    log_dir = os.path.join(os.path.dirname(__file__), '..', 'monitor_logs')  # Update path to the monitor_logs folder
-    
-    # Ensure the logs directory exists
-    if not os.path.exists(log_dir):
-        os.makedirs(log_dir)
+    # Set the log path directly in the root project directory
+    log_path = os.path.join(os.path.dirname(__file__), '..', 'resource_monitoring.log')  # Log file is now in the root directory
     
     # Run the shell script from the correct location
     script_path = os.path.join(os.path.dirname(__file__), '..', 'backend', 'system_resources.sh')  # Correct path to system_resources.sh
     subprocess.run(['bash', script_path])
     time.sleep(0.2)  # Wait for the script to finish and the log file to be updated
     
-    # Read the log file after the shell script has run
-    log_path = os.path.join(log_dir, 'resource_monitoring.log')
+    # Check if the log file exists, if not, create it (though this shouldn't happen if subprocess is working properly)
+    if not os.path.exists(log_path):
+        with open(log_path, 'w'):  # Create an empty log file if it doesn't exist
+            pass
+    
+    # Read the log file in the root directory
     with open(log_path, 'r') as log_file:
         return log_file.read()
 

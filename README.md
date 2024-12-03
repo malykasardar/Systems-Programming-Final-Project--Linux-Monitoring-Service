@@ -44,5 +44,5 @@
 ## Run the project
   **Run the following command from the root of the project**
     ```bash
-    python frontend/main.py
+    python3 frontend/main.py
     ```
